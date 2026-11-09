@@ -1,0 +1,54 @@
+
+        * { margin: 0; padding: 0; box-sizing: border-box; border-radius: 0px !important; }
+        html { scroll-behavior: smooth; font-family: Helvetica, "Helvetica Neue", "Arial", "PingFang SC", sans-serif; }
+        body { background: #0a0f0d; color: #ecfdf5; line-height: 1.7; overflow-x: hidden; }
+        a { color: inherit; text-decoration: none; transition: none; }
+        img, svg { max-width: 100%; height: auto; }
+        .container { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+
+        .motion-art-frame { width: 100%; min-height: 320px; display: flex; align-items: center; justify-content: center; }
+        .motion-svg { width: 100%; height: auto; max-height: 360px; filter: none; }
+
+        .emerald-nav { background: #0a0f0d; border-bottom: 1px solid #1c2a23; position: sticky; top: 0; z-index: 100; }
+        .emerald-nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+        .emerald-logo { font-size: 20px; font-weight: 700; color: #10b981; letter-spacing: 0.5px; }
+        .emerald-menu { display: flex; gap: 24px; list-style: none; }
+        .emerald-menu a { font-size: 14px; color: #a7f3d0; text-transform: uppercase; }
+        .emerald-menu a:hover, .emerald-menu a.active { color: #ffffff; border-bottom: 2px solid #10b981; }
+
+        .btn-aff-cta { display: inline-flex; align-items: center; justify-content: center; padding: 12px 26px; font-weight: 700; font-size: 14px; text-transform: uppercase; background: #10b981; color: #000; border: 1px solid #10b981; cursor: pointer; }
+        .btn-aff-cta:hover { background: #34d399; }
+        .btn-tizi-dofollow { display: inline-flex; align-items: center; justify-content: center; padding: 11px 24px; font-weight: 600; font-size: 14px; text-transform: uppercase; border: 1px solid #1c2a23; background: #121a16; color: #10b981; margin-left: 12px; }
+        .btn-tizi-dofollow:hover { border-color: #10b981; }
+
+        .hero-section { padding: 65px 0 55px; border-bottom: 1px solid #1c2a23; text-align: center; }
+        .hero-tag { display: inline-block; padding: 4px 14px; background: transparent; border: 1px solid #10b981; font-size: 12px; color: #10b981; margin-bottom: 22px; text-transform: uppercase; }
+        .hero-title { font-size: 38px; font-weight: 700; line-height: 1.25; margin-bottom: 18px; color: #fff; }
+        .hero-title-highlight { color: #10b981; }
+        .hero-desc { max-width: 800px; margin: 0 auto 30px; font-size: 15px; color: #a7f3d0; line-height: 1.8; opacity: 0.85; }
+        .hero-actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
+
+        .emerald-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0px; border: 1px solid #1c2a23; margin-top: 45px; }
+        .emerald-card { background: #0a0f0d; border: 1px solid #1c2a23; padding: 28px; }
+        .emerald-card h3 { color: #10b981; font-size: 17px; margin-bottom: 10px; font-weight: 700; }
+
+        .pricing-section { padding: 70px 0; background: #060908; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0px; border: 1px solid #1c2a23; }
+        .price-card { background: #0a0f0d; border: 1px solid #1c2a23; padding: 34px 22px; text-align: center; }
+        .price-card.featured { border-color: #10b981; background: #121a16; }
+        .price-amount { font-size: 36px; font-weight: 700; color: #10b981; margin: 16px 0; }
+
+        .emerald-footer { background: #050807; border-top: 1px solid #1c2a23; padding: 50px 0 30px; margin-top: 70px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 30px; margin-bottom: 30px; }
+        .footer-col h4 { font-size: 14px; color: #10b981; margin-bottom: 14px; text-transform: uppercase; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 8px; font-size: 13px; color: #a7f3d0; }
+        .footer-bottom { text-align: center; font-size: 12px; color: #047857; padding-top: 20px; border-top: 1px solid #121a16; }
+
+        @media (max-width: 860px) {
+          .emerald-grid, .pricing-grid, .footer-grid { grid-template-columns: 1fr; }
+          .emerald-menu { flex-wrap: wrap; justify-content: center; gap: 10px; }
+          .hero-title { font-size: 25px; }
+          .btn-aff-cta, .btn-tizi-dofollow { width: 100%; margin-left: 0 !important; margin-bottom: 12px; }
+        }
+        
